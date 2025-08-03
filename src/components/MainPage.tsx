@@ -161,52 +161,9 @@ export const MainPage: React.FC<MainPageProps> = ({ onNavigate, isDarkMode = fal
           <div className="flex justify-center items-center gap-3 mb-6 animate-fadeInScale">
             <div className="w-8 h-0.5 bg-gradient-to-r from-transparent to-yellow-300"></div>
             <p className="text-xl md:text-2xl text-blue-100 font-semibold">
-              دار المناسبات بالجامع الشرقي - دمليج
+              دار المناسبات الشرقيه - دمليج
             </p>
             <div className="w-8 h-0.5 bg-gradient-to-l from-transparent to-yellow-300"></div>
-          </div>
-          
-          {/* Supervisor section */}
-          <div className="flex justify-center items-center gap-3 mb-6 animate-fadeInScale" style={{ animationDelay: "0.1s" }}>
-            <div className="w-6 h-0.5 bg-gradient-to-r from-transparent to-green-300"></div>
-            <p className="text-lg md:text-xl text-green-100 font-medium">
-              المسابقة بإشراف إمام المسجد فضيلة الشيخ 
-              <button
-                onClick={() => {
-                  const modal = document.createElement('div');
-                  modal.className = 'fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4';
-                  modal.innerHTML = `
-                    <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 max-w-md w-full text-center">
-                      <img 
-                        src="https://www.mediafire.com/convkey/8b5a/uakbupoy7z7dwjxzg.jpg" 
-                        alt="الشيخ مصباح عبدالمنجي الدكاني"
-                        class="w-24 h-24 rounded-full object-cover border-4 border-yellow-300 shadow-lg mx-auto mb-4"
-                      />
-                      <h3 class="text-xl font-bold mb-4 text-gray-800 dark:text-gray-100">تواصل مع الشيخ مصباح عبدالمنجي الدكاني</h3>
-                      <div class="space-y-4">
-                        <a href="https://wa.me/201220536204" target="_blank" rel="noopener noreferrer" class="block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors">
-                          واتساب
-                        </a>
-                        <a href="https://www.facebook.com/mesbah.eldokany" target="_blank" rel="noopener noreferrer" class="block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-                          فيسبوك
-                        </a>
-                      </div>
-                      <button onclick="this.parentElement.parentElement.remove()" class="mt-4 bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors">
-                        إغلاق
-                      </button>
-                    </div>
-                  `;
-                  document.body.appendChild(modal);
-                  modal.onclick = (e) => {
-                    if (e.target === modal) modal.remove();
-                  };
-                }}
-                className="text-yellow-300 hover:text-yellow-200 transition-colors font-bold underline decoration-2 underline-offset-2 mx-1"
-              >
-                مصباح عبدالمنجي الدكاني
-              </button>
-            </p>
-            <div className="w-6 h-0.5 bg-gradient-to-l from-transparent to-green-300"></div>
           </div>
         </div>
 
@@ -496,6 +453,7 @@ export const MainPage: React.FC<MainPageProps> = ({ onNavigate, isDarkMode = fal
                           modal.innerHTML = `
                             <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 max-w-md w-full text-center">
                               <h3 class="text-xl font-bold mb-4 text-gray-800 dark:text-gray-100">تواصل مع المهندس احمد طارق عبدالهادي علي الدين</h3>
+                              <h3 class="text-xl font-bold mb-4 text-gray-800 dark:text-gray-100">تواصل مع البشمهندس احمد طارق عبدالهادي علي الدين</h3>
                               <div class="space-y-4">
                                 <a href="https://wa.me/201559181558" target="_blank" rel="noopener noreferrer" class="block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors">
                                   واتساب
@@ -516,7 +474,7 @@ export const MainPage: React.FC<MainPageProps> = ({ onNavigate, isDarkMode = fal
                         }}
                         className="text-white hover:text-yellow-300 transition-colors font-bold text-lg block glowing-text"
                       >
-                        المهندس احمد طارق عبدالهادي علي الدين
+                        البشمهندس احمد طارق عبدالهادي علي الدين
                       </button>
                       <p className="text-blue-200 text-sm">للتواصل عبر الواتساب والفيسبوك</p>
                     </div>
@@ -545,7 +503,7 @@ export const MainPage: React.FC<MainPageProps> = ({ onNavigate, isDarkMode = fal
                 rel="noopener noreferrer"
                 className="text-white hover:text-yellow-300 transition-colors font-semibold text-lg block text-center"
               >
-                دار المناسبات بالجامع الشرقي، دمليج، منوف، المنوفية
+                دار المناسبات الشرقيه، دمليج، منوف، المنوفية
               </a>
             </div>
 
